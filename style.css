@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap');
+
+body {
+  background-image: url(https://background-tiles.com/overview/white/patterns/large/1020.png);
+  position: relative;
+}
+
+h1 {
+  font-family: 'odibee sans', monospace;
+  font-size: 48px;
+}
+
+h2 {
+  font-family: 'odibee sans', monospace;
+  font-size: 32px;
+  text-align: center;
+}
+
+h3 {
+  font-family: 'odibee sans', monospace;
+  font-size: 24px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: black;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+#header {
+  position: fixed;
+  top: 0px;
+  background-color: #fff;
+  border-bottom: 3px solid black;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#header-img {
+  display: flex;
+  margin-left: 45px;
+  margin-top: 5px;
+  max-height: 40px;
+}
+
+nav > ul {
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+nav > ul > li {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+section {
+  margin-bottom: 80px;
+  margin-top: 100px;
+  text-align: center; 
+}
+
+#form {
+  padding-top: 20px;
+  font-family: sans-serif;
+  font-size: 12px;
+}
+
+#email {
+  padding: 5px 10px 5px 10px;
+  border: 1px solid black;
+  border-radius: 4px; 
+}
+
+#submit {
+  padding: 5px 20px 5px 20px;
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: #aaf
+}
+
+#feat_box {
+  text-align: center;
+}
+
+.feat {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-family: sans-serif;
+  text-shadow: 1px 1px #999;
+  font-size: 16px;
+  margin: 20px 15% 20px 15%;
+  padding-right: 15px;
+  display: flex;
+  flex-direction: row;
+}
+
+.bullet-point {
+  height: 36px;
+  width: 36px;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
+#video {
+  width:530px;
+  height:300px;
+}
+
+#services-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.srv {
+  border: 5px solid #505;
+  border-radius: 15px 30px;
+  background-color: #faf;
+  padding: 5px 28px 5px 0px;
+}
+
+#footer {
+  border-top: 2px solid black;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#copyright {
+  font-size: 12px;
+  color: #aaa;
+  padding-top: 4px;
+  padding-right: 10px;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1000px) {
+  #services-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+  .srv {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 24px;
+  }  
+  h3 {
+    font-size: 20px;
+  }
+  .feat {
+    font-size: 12px;
+  }  
+  #video {
+    width:265px;
+    height:150px;
+  }
+  #header {
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 12px;
+  }
+  #footer {
+    font-size: 12px;
+  }
+}
